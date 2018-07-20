@@ -1,0 +1,123 @@
+html, body {
+	background-color: black;
+}
+
+body {
+	margin: 0;
+}
+
+.banner-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.banner-video {
+	width: 100%;
+	height: 100%;
+}
+
+.banner-video-wrapper {
+	max-height: 100vh;
+	height: 100%;
+	overflow: hidden;
+}
+
+.banner-wrapper {
+	position: absolute;
+	bottom: 40%;
+	color: white;
+	margin: auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.banner-text {
+	font-size: 7em;
+	font-weight: 900;
+	color: white;
+	margin: 0;
+}
+
+.banner-links {
+	font-weight: 300;
+}
+
+.banner-links a {
+	text-decoration: none;
+	color: white;
+	margin: 0 .3em;
+}
+
+.banner-links a:hover {
+	text-decoration: underline;
+}
+
+.banner-dot {
+	background-color: red;
+	width: 15px;
+	height: 15px;
+	border-radius: 999px;
+	border: solid black 10px;
+	position: absolute;
+	top: calc(100% - 20px);
+  /* width + 2 * border size */
+	left: calc(50% - 10px);
+}
+
+.container {
+	margin: auto;
+	max-width: 50em;
+}
+
+.navbar {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+.navbar-logo {
+	width: 100px;
+	height: auto;
+}
+
+.navbar-links {
+	position: absolute;
+	margin-top: 1em;
+	margin-right: 1em;
+	right: 0;
+	top: 0;
+}
+
+.navbar-links a {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	padding: .4em;
+}
+
+.text-block {
+	color: white;
+	margin-top: 4em;
+	max-width: 30em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.text-block h2 {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.text-block p {
+	font-size: 1em;
+}
+
+form label {
+	color: white;
+}
+
+form input {
+width: 100%;
+}
