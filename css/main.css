@@ -1,5 +1,6 @@
 html, body {
 	background-color: black;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
 	text-align: center;
 	display: block;
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-text {
@@ -65,11 +65,95 @@ body {
 	top: calc(100% - 20px);
   /* width + 2 * border size */
 	left: calc(50% - 10px);
+	z-index: 1;
+}
+
+.block {
+	position: relative;
+	overflow: hidden;
+}
+
+.block-image {
+	background-repeat: no-repeat;
+	margin-left: 32%;
+	background-position: bottom;
+	background-size: contain;
+	height: 500px;
+}
+
+.block-1 {
+	background-image: url(/img/block_tv.jpg);
+}
+
+.block-2 {
+	background-image: url(/img/block_dress.jpg);
+}
+
+.block-4 {
+	background-image: url(/img/block_flex.jpg);
+}
+
+.block-3 {
+	background-image: url(/img/block_purple.jpg);
+}
+
+.block-5 {
+	background-image: url(/img/block_cube.jpg);
+	right: -20%;
+	position: relative;
 }
 
 .container {
+}
+
+.contact-form {
 	margin: auto;
-	max-width: 50em;
+	max-width: 40em;
+	margin-left: 20%;
+	color: white;
+}
+
+.contact-form label {
+	display: none;
+	margin-bottom: .7em;
+}
+
+.contact-form input,
+.contact-form textarea {
+	-webkit-appearance: none;
+	border: solid 2px white;
+	padding: .8em;
+	margin-bottom: 2em;
+	color: white;
+	background-color: black;
+	display: block;
+	width: 100%;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+	background-color: white;
+	color: black;
+	width: auto;
+	font-size: 1em;
+	cursor: pointer;
+	padding: .4em .8em;
+}
+
+.contact-form input[type="submit"]:hover {
+	color: white;
+	background-color: black;
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	margin-bottom: 2em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .navbar {
@@ -84,6 +168,7 @@ body {
 }
 
 .navbar-links {
+	display: none;
 	position: absolute;
 	margin-top: 1em;
 	margin-right: 1em;
@@ -93,7 +178,6 @@ body {
 
 .navbar-links a {
 	color: white;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	padding: .4em;
 }
@@ -102,7 +186,12 @@ body {
 	color: white;
 	margin-top: 4em;
 	max-width: 30em;
-	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	bottom: 20%;
+	margin-left: 20%;
+	margin-bottom: 2em;
+	right: 0;
+	left: 0;
 }
 
 .text-block h2 {
@@ -114,10 +203,23 @@ body {
 	font-size: 1em;
 }
 
-form label {
-	color: white;
+@media only screen and (max-width: 1000px) {
+	.banner-text {
+		font-size: 3em;
+	}
+
+	.contact-form {
+		margin-left: 2em;
+	}
+
+	.text-block {
+		margin-left: 2em;
+		margin-right: 20%;
+	}
 }
 
-form input {
-width: 100%;
+@media only screen and (max-width: 600px) {
+	.banner-text {
+		font-size: 2em;
+	}
 }
