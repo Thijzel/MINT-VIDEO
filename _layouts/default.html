@@ -15,15 +15,23 @@
 </head>
 
 <body>
-  <nav class="navbar">
+  <a href="/">
+    <img src="/img/logo_edit.svg" class="navbar-logo--mobile">
+  </a>
+  <nav id="nav" class="navbar">
     <a href="/">
       <img src="/img/logo_edit.svg" class="navbar-logo">
     </a>
     <div class="navbar-links">
       <a href="/">Home</a>
+      <a href="/theater.html">Theater</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
     </div>
   </nav>
+  <button class="nav-menu nav-menu--open" onClick="openMenu()"></button>
+  <button class="nav-menu nav-menu--close" onClick="closeMenu()"></button>
   {{ content }}
   <script src="js/main.js"></script>
 </body>

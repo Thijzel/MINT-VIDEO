@@ -48,7 +48,7 @@ body {
 .banner-link {
 	text-decoration: none;
 	color: white;
-	margin: 0 .3em;
+	margin: 0 .6em;
 }
 
 .banner-links a:hover {
@@ -160,6 +160,7 @@ body {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+	top: 0;
 }
 
 .navbar-logo {
@@ -168,7 +169,6 @@ body {
 }
 
 .navbar-links {
-	display: none;
 	position: absolute;
 	margin-top: 1em;
 	margin-right: 1em;
@@ -180,6 +180,33 @@ body {
 	color: white;
 	font-weight: 300;
 	padding: .4em;
+	text-decoration: none;
+}
+
+.navbar-logo--mobile {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+
+.nav-menu {
+	color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 200;
+	display: none;
+	background: url(/img/hamburger.svg);
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	-webkit-appearance: none;
+	border: none;
+	background-repeat: no-repeat;
 }
 
 .text-block {
@@ -221,5 +248,53 @@ body {
 @media only screen and (max-width: 600px) {
 	.banner-text {
 		font-size: 2em;
+	}
+
+	.banner-video {
+		width: auto;
+	}
+
+	.navbar {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    background: black;
+    z-index: 100;
+    width: 100vw;
+	}
+
+	.nav-menu {
+		display: block;
+	}
+
+	.nav-menu--close {
+		display: none;
+	}
+
+	.navbar-links {
+		position: relative;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.navbar-links a {
+		display: block;
+		font-size: 1.6em;
+	}
+
+	.navbar-logo--mobile {
+		display: block;
+	}
+
+	.navbar--open .navbar{
+		display: block;
+	}
+
+	.navbar--open .nav-menu--close {
+		display: block;
+	}
+
+	.navbar--open .nav-menu--open {
+		display: none;
 	}
 }
