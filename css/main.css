@@ -5,6 +5,7 @@ html, body {
 
 body {
 	margin: 0;
+	width: 100%;
 }
 
 .banner-container {
@@ -22,6 +23,7 @@ body {
 	max-height: 100vh;
 	height: 100%;
 	overflow: hidden;
+	max-width: 100%;
 }
 
 .banner-wrapper {
@@ -39,6 +41,7 @@ body {
 	font-weight: 900;
 	color: white;
 	margin: 0;
+	word-break: break-all;
 }
 
 .banner-links {
@@ -156,6 +159,10 @@ body {
 	width: 100%;
 }
 
+.marger {
+	height: 80px;
+}
+
 .navbar {
 	position: absolute;
 	z-index: 1;
@@ -164,7 +171,7 @@ body {
 }
 
 .navbar-logo {
-	width: 100px;
+	width: 80px;
 	height: auto;
 }
 
@@ -188,8 +195,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	z-index: 1;
 }
 
@@ -202,8 +209,8 @@ body {
 	display: none;
 	background: url(/img/hamburger.svg);
 	background-position: center;
-	width: 40px;
-	height: 40px;
+	width: 80px;
+	height: 80px;
 	-webkit-appearance: none;
 	border: none;
 	background-repeat: no-repeat;
@@ -252,6 +259,7 @@ body {
 
 	.banner-video {
 		width: auto;
+		height: 100vh;
 	}
 
 	.navbar {
@@ -260,7 +268,7 @@ body {
     height: 100vh;
     background: black;
     z-index: 100;
-    width: 100vw;
+    width: 100%;
 	}
 
 	.nav-menu {
